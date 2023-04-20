@@ -4,24 +4,6 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAzAGYQKKwhPwpGzwMtawe1SSOSSBkxlQA",
-  authDomain: "devglaubermonteiro-479bc.firebaseapp.com",
-  projectId: "devglaubermonteiro-479bc",
-  storageBucket: "devglaubermonteiro-479bc.appspot.com",
-  messagingSenderId: "1069181443356",
-  appId: "1:1069181443356:web:be05b6704edde31e8daed9",
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
 export default function Home() {
   return (
     <>

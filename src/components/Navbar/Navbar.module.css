@@ -16,12 +16,33 @@
   margin-bottom: -8px;
   font-weight: bold;
 }
-.container h3 {
+.container span {
+  gap: 3px;
+  white-space: nowrap;
+  margin: -1.1rem -50% 0 50%;
+
+  width: 170px;
   display: flex;
-  justify-content: center;
-  margin-top: -1rem;
-  margin-left: 10rem;
+
   color: #ad69ff;
+}
+
+.container span p {
+  color: #fff6ab;
+  margin: 0;
+}
+
+.typing-animation {
+  animation: cursor 1s infinite alternate;
+}
+
+@keyframes cursor {
+  from {
+    color: #808080;
+  }
+  to {
+    color: transparent;
+  }
 }
 
 .icon {
@@ -87,12 +108,13 @@
     margin-bottom: -8px;
     font-weight: bold;
   }
-  .container h3 {
+  .container span {
+    width: 15%;
+    margin: -1.1rem 50% 0 50%;
     font-size: 15px;
     display: flex;
     justify-content: center;
-    margin-top: -1rem;
-    margin-left: 10rem;
+
     color: #ad69ff;
   }
 }

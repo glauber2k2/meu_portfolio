@@ -16,7 +16,10 @@ export default function Navbar() {
           />
           <h1>DEV Glauber Monteiro</h1>
         </div>
-        <h3>full-stack developer</h3>
+        <span>
+          <h3>full-stack developer</h3>{" "}
+          <p className={styles["typing-animation"]}>|</p>
+        </span>
         <div className={styles.link}>
           <a
             onClick={() => {
