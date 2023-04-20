@@ -28,20 +28,26 @@
 }
 
 .container span p {
-  color: #fff6ab;
+  color: #ffffff95;
   margin: 0;
 }
 
 .typing-animation {
-  animation: cursor 1s infinite alternate;
+  animation: cursor 1s infinite;
 }
 
 @keyframes cursor {
-  from {
-    color: #808080;
+  0% {
+    opacity: 1;
   }
-  to {
-    color: transparent;
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
