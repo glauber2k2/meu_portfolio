@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Meu Portfolio</title>
+        <title>Meu portfolio</title>
       </Head>
       <Navbar />
       <div className={styles.container}>
@@ -177,22 +177,24 @@ export default function Home() {
                   width={720}
                   height={400}
                   className={styles.imgproject}
-                  alt="burguer"
+                  alt="DripStore"
                 />
               </a>
             </Link>
           </span>
 
           <span>
+            <h2>DripStore</h2>
             <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
-              <h2>Rede Social</h2>
-              <Image
-                src="/images/rede.png"
-                width={720}
-                height={400}
-                className={styles.imgproject}
-                alt="rede"
-              />
+              <a>
+                <Image
+                  src="/images/rede.png"
+                  width={720}
+                  height={400}
+                  className={styles.imgproject}
+                  alt="rede"
+                />
+              </a>
             </Link>
           </span>
         </div>
