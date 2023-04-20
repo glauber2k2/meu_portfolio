@@ -39,18 +39,18 @@ export default function Home() {
             <h3>Qualidades:</h3>
             <p>
               Tanto na vida, quanto profissionalmente, possuo diversas
-              qualidades que me fazem ter um bom desempenho, dentre elas estão:{" "}
+              qualidades que me fazem ter um bom desempenho, dentre elas estão:
             </p>
             <br />
             <br />
-            <h4>- Rápido aprendizado</h4>{" "}
+            <h4>- Rápido aprendizado</h4>
             <p>
               Pelo fato que apesar de me indentificar com a área eu gosto
               daquilo que estou fazendo, e isso acaba me dando certa facilidade
               de aprender coisas novas.
             </p>
             <br />
-            <h4>- Foco na resolução do problema</h4>{" "}
+            <h4>- Foco na resolução do problema</h4>
             <p>
               quando me deparo com algum problema a ser resolvido, busco ao
               máximo resolve-lo da melhor maneira possível, e não desisto
@@ -58,7 +58,7 @@ export default function Home() {
               para que seja solucionado.
             </p>
             <br />
-            <h4>- Sociável</h4>{" "}
+            <h4>- Sociável</h4>
             <p>
               Me considero um bom profissional tanto singular, como
               coletivamente, quando me deparo com algum colega de trabalho com
@@ -180,13 +180,13 @@ export default function Home() {
           </span>
 
           <span>
-            <h2>Hamburgueria</h2>
+            <h2>Rede Social</h2>
             <Image
-              src="/images/burguer.png"
+              src="/images/rede.png"
               width={720}
               height={400}
               className={styles.imgproject}
-              alt="burguer"
+              alt="rede"
             />
           </span>
         </div>
