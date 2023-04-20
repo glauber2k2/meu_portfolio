@@ -3,10 +3,14 @@ import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Meu Portfolio</title>
+      </Head>
       <Navbar />
       <div className={styles.container}>
         <div className={styles.about} id="about">
