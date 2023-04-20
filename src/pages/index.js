@@ -36,7 +36,8 @@ export default function Home() {
               Estou quase me formando em Ciências da Computação, pela Unipê,
               faculdade bastante conhecida pelo Brasil pela sua empresa interna:
               Fabrica de Softwares, no qual é responsavel por ingressar os
-              estudantes no mercado de trabalho, que possui de todo Brasil.
+              estudantes no mercado de trabalho, que possui clientes de todo
+              Brasil.
             </p>
             <br />
             <br />
@@ -56,7 +57,7 @@ export default function Home() {
             <br />
             <h4>- Foco na resolução do problema</h4>
             <p>
-              quando me deparo com algum problema a ser resolvido, busco ao
+              Quando me deparo com algum problema a ser resolvido, busco ao
               máximo resolve-lo da melhor maneira possível, e não desisto
               enquanto não for resolvido, buscando sempre encontrar uma forma
               para que seja solucionado.
@@ -68,9 +69,9 @@ export default function Home() {
               coletivamente, quando me deparo com algum colega de trabalho com
               dificuldade em algo em que sei resolver, não meço esforços para
               ajuda-lo a solucionar, assim como quando sou eu que me deparo com
-              algum empecilho que estou com dificuldade de solucionar, não terei
-              nenhum impedimento para chegar e perguntar, pois assim adquiro um
-              novo conhecimento além de resolver a dificuldade encontrada.
+              algum empecilho que estou com dificuldade, não terei nenhum
+              impedimento para chegar e perguntar, pois assim adquiro um novo
+              conhecimento além de resolver a dificuldade encontrada.
             </p>
           </span>
         </div>
@@ -184,7 +185,7 @@ export default function Home() {
           </span>
 
           <span>
-            <h2>DripStore</h2>
+            <h2>Rede Social</h2>
             <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
               <a>
                 <Image
@@ -205,18 +206,18 @@ export default function Home() {
           <span>
             <h2>Dev Junior</h2> <br />
             <p>
-              Sou desenvolvedor Junior, entrei na area da programação há 3 anos.{" "}
+              Sou desenvolvedor Junior, entrei na area da programação há 3 anos.
               <br />
-              comecei a aprender na faculdade,e após isso fui buscando me
-              aprofundar mais nas recentes tecnologias presentes no mercado, ja
+              Comecei a aprender na faculdade,e após isso fui buscando me
+              aprofundar mais nas recentes tecnologias presentes no mercado, já
               fiz diversos cursos online de programação como Rocketseat Ignite,
-              Matheus Silva, Pythonando, Matheus Battisti... <br />
+              Matheus Silva, Pythonando, Matheus Battisti...entre outros <br />
               <br />
-              já realizei tanto projetos freelancers maioria em front-end
-              utilizando Javascript, Typescript, React e Nextjs. e atualmente
-              trabalho home-office na Fabrica de Softwares na area de Back-end,
-              para uma construtora de Porto-Alegre utilizando a linguagem python
-              com o framework django.
+              Também já realizei projetos freelancers em sua maioria em
+              front-end utilizando Javascript, Typescript, React e Nextjs. e
+              atualmente trabalho home-office na Fabrica de Softwares na area de
+              Back-end, para uma construtora de Porto-Alegre utilizando a
+              linguagem python com o framework django.
             </p>
           </span>
         </div>
