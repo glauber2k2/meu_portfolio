@@ -180,14 +180,16 @@ export default function Home() {
           </span>
 
           <span>
-            <h2>Rede Social</h2>
-            <Image
-              src="/images/rede.png"
-              width={720}
-              height={400}
-              className={styles.imgproject}
-              alt="rede"
-            />
+            <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
+              <h2>Rede Social</h2>
+              <Image
+                src="/images/rede.png"
+                width={720}
+                height={400}
+                className={styles.imgproject}
+                alt="rede"
+              />
+            </Link>
           </span>
         </div>
         <hr color="#303030" />
