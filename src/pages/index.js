@@ -1,11 +1,36 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useKeenSlider } from "keen-slider/react";
+
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 
+import "keen-slider/keen-slider.min.css";
+
+const animation = { duration: 20000, easing: (t) => t };
+
 export default function Home() {
+  const [sliderRef] = useKeenSlider({
+    slides: {
+      perView: 3,
+    },
+
+    loop: true,
+
+    drag: false,
+    created(s) {
+      s.moveToIdx(2, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 2, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 2, true, animation);
+    },
+  });
+
   return (
     <>
       <Head>
@@ -144,11 +169,13 @@ export default function Home() {
             />
           </span>
         </div>
-
-        <div className={styles.projects} id="projects">
-          <h1>Meus Projetos:</h1>
-
-          <span>
+        <h1 className={styles.titleprojects}> Projetos Realizados: </h1>
+        <div
+          id="projects"
+          ref={sliderRef}
+          className={`${styles.projects} ${"keen-slider"}`}
+        >
+          <span className="keen-slider__slide">
             <h2>Hamburgueria</h2>
             <Link
               href="https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app"
@@ -157,16 +184,16 @@ export default function Home() {
               <a>
                 <Image
                   src="/images/burguer.png"
-                  width={720}
-                  height={400}
-                  className={styles.imgproject}
+                  width={420}
+                  height={300}
                   alt="burguer"
+                  className={styles.imgproject}
                 />
               </a>
             </Link>
           </span>
 
-          <span>
+          <span className="keen-slider__slide">
             <h2>DripStore</h2>
             <Link
               href="https://loja-next-3kk8uyc8h-glauber2k2.vercel.app"
@@ -175,8 +202,8 @@ export default function Home() {
               <a>
                 <Image
                   src="/images/DripStore.png"
-                  width={720}
-                  height={400}
+                  width={420}
+                  height={300}
                   className={styles.imgproject}
                   alt="DripStore"
                 />
@@ -184,14 +211,65 @@ export default function Home() {
             </Link>
           </span>
 
-          <span>
+          <span className="keen-slider__slide">
             <h2>Rede Social</h2>
             <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
               <a>
                 <Image
                   src="/images/rede.png"
-                  width={720}
-                  height={400}
+                  width={420}
+                  height={300}
+                  className={styles.imgproject}
+                  alt="rede"
+                />
+              </a>
+            </Link>
+          </span>
+
+          <span className="keen-slider__slide">
+            <h2>Hamburgueria</h2>
+            <Link
+              href="https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app"
+              legacyBehavior
+            >
+              <a>
+                <Image
+                  src="/images/burguer.png"
+                  width={420}
+                  height={300}
+                  alt="burguer"
+                  className={styles.imgproject}
+                />
+              </a>
+            </Link>
+          </span>
+
+          <span className="keen-slider__slide">
+            <h2>DripStore</h2>
+            <Link
+              href="https://loja-next-3kk8uyc8h-glauber2k2.vercel.app"
+              legacyBehavior
+            >
+              <a>
+                <Image
+                  src="/images/DripStore.png"
+                  width={420}
+                  height={300}
+                  className={styles.imgproject}
+                  alt="DripStore"
+                />
+              </a>
+            </Link>
+          </span>
+
+          <span className="keen-slider__slide">
+            <h2>Rede Social</h2>
+            <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
+              <a>
+                <Image
+                  src="/images/rede.png"
+                  width={420}
+                  height={300}
                   className={styles.imgproject}
                   alt="rede"
                 />

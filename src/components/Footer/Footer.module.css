@@ -34,6 +34,7 @@
 
 @media (max-width: 768px) {
   .container {
+    font-size: 15px;
     display: flex;
     background-color: #2020205d;
   }
