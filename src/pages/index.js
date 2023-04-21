@@ -88,7 +88,7 @@ export default function Home() {
               para que seja solucionado.
             </p>
             <br />
-            <h4>- Sociável</h4>
+            <h4>- Trabalho em equipe</h4>
             <p>
               Me considero um bom profissional tanto singular, como
               coletivamente, quando me deparo com algum colega de trabalho com
