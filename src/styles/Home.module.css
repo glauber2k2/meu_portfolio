@@ -121,14 +121,12 @@
 .imgproject {
   border: solid 2px #8f8f8f1f;
   border-radius: 50px;
-  width: 80%;
+  width: 90%;
   height: 80%;
 }
 
 .imgproject:hover {
   border: solid 2px #ad69ff;
-  width: 80%;
-  height: 80%;
 }
 
 .exp {
