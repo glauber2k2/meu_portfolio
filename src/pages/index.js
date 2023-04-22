@@ -201,7 +201,7 @@ export default function Home() {
             >
               <a>
                 <Image
-                  src="/images/DripStore.png"
+                  src="/images/dripstore.png"
                   width={420}
                   height={300}
                   className={styles.imgproject}
@@ -252,7 +252,7 @@ export default function Home() {
             >
               <a>
                 <Image
-                  src="/images/DripStore.png"
+                  src="/images/dripstore.png"
                   width={420}
                   height={300}
                   className={styles.imgproject}
