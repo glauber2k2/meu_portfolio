@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { useKeenSlider } from "keen-slider/react";
 
 import styles from "../styles/Home.module.css";
@@ -9,9 +8,10 @@ import Head from "next/head";
 
 import "keen-slider/keen-slider.min.css";
 
-const animation = { duration: 20000, easing: (t) => t };
+const animation = { duration: 20000, easing: (t) => t }; //animação da esteira de projetos.
 
 export default function Home() {
+  //esteira de projetos
   const [sliderRef] = useKeenSlider({
     slides: {
       perView: 3,
@@ -30,6 +30,43 @@ export default function Home() {
       s.moveToIdx(s.track.details.abs + 2, true, animation);
     },
   });
+
+  //auto slider
+  const [secondSliderRef] = useKeenSlider(
+    {
+      loop: true,
+    },
+    [
+      (slider) => {
+        let timeout;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 3000);
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
 
   return (
     <>
@@ -181,7 +218,7 @@ export default function Home() {
               href="https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app"
               legacyBehavior
             >
-              <a>
+              <a target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/burguer.png"
                   width={420}
@@ -195,11 +232,8 @@ export default function Home() {
 
           <span className="keen-slider__slide">
             <h2>DripStore</h2>
-            <Link
-              href="https://loja-next-3kk8uyc8h-glauber2k2.vercel.app"
-              legacyBehavior
-            >
-              <a>
+            <Link href="https://loja-next-js-ebon.vercel.app" legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/drip.png"
                   width={420}
@@ -214,7 +248,7 @@ export default function Home() {
           <span className="keen-slider__slide">
             <h2>Rede Social</h2>
             <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
-              <a>
+              <a target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/rede.png"
                   width={420}
@@ -232,7 +266,7 @@ export default function Home() {
               href="https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app"
               legacyBehavior
             >
-              <a>
+              <a target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/burguer.png"
                   width={420}
@@ -246,11 +280,8 @@ export default function Home() {
 
           <span className="keen-slider__slide">
             <h2>DripStore</h2>
-            <Link
-              href="https://loja-next-3kk8uyc8h-glauber2k2.vercel.app"
-              legacyBehavior
-            >
-              <a>
+            <Link href="https://loja-next-js-ebon.vercel.app" legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/drip.png"
                   width={420}
@@ -265,7 +296,7 @@ export default function Home() {
           <span className="keen-slider__slide">
             <h2>Rede Social</h2>
             <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
-              <a>
+              <a target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/images/rede.png"
                   width={420}
@@ -282,9 +313,9 @@ export default function Home() {
           <h1>Experiencias:</h1>
           <br />
           <span>
-            <h2>Dev Junior</h2> <br />
+            <h2>Desenvolvedor Junior</h2> <br />
             <p>
-              Sou desenvolvedor Junior, entrei na area da programação há 3 anos.
+              Sou dev Junior, entrei na area da programação há 3 anos.
               <br />
               Comecei a aprender na faculdade,e após isso fui buscando me
               aprofundar mais nas recentes tecnologias presentes no mercado, já
@@ -299,9 +330,123 @@ export default function Home() {
             </p>
           </span>
         </div>
-        <div className={styles.contact} id="contact"></div>
+
+        <div className={styles.differentialsBox}>
+          <div
+            ref={secondSliderRef}
+            className={`${"keen-slider"} ${styles.slideCards}`}
+            style={{
+              width: `${100}%`,
+              height: `${100}%`,
+            }}
+          >
+            <div className="keen-slider__slide number-slide1">
+              <span>
+                <Image src="/images/back.svg" width={50} height={50} alt="" />
+                <h1>Entusiasta em back-end</h1>
+              </span>
+              <h3>
+                Me aventuro bastante na área de back-end, e já participei um
+                pouco do back-end de alguns de meus ultimos projetos, tenho
+                vontade de virar um full-stack futuramente
+              </h3>
+            </div>
+
+            <div className="keen-slider__slide number-slide2">
+              <span>
+                <Image src="/images/clean.svg" width={50} height={50} alt="" />
+                <h1>Clean Code</h1>
+              </span>
+              <h3>
+                Busco ao máximo deixar meu código o mais legível, e bem
+                documentado para futuras manutenções e facilitar para que outras
+                pessoas entendam meu código.
+              </h3>
+            </div>
+
+            <div className="keen-slider__slide number-slide3">
+              <span>
+                <Image src="/images/eye.svg" width={50} height={50} alt="" />
+                <h1>Percepção de design</h1>
+              </span>
+              <h3>
+                Há bastante tempo que tenho design como hobbie, e isso acabou me
+                dando uma maior percepção esteticamente das coisas, por isso
+                tenho maior facilidade de entregar os projetos com um bom visual
+                gráfico.
+              </h3>
+            </div>
+          </div>
+
+          <div className={styles.titleElement}>
+            <h1>Esses são os meus diferenciais</h1>
+            <h3>pontos que impactam positivamente nos projetos.</h3>
+          </div>
+        </div>
+
+        <hr color="#303030" />
+
+        <div className={styles.contact}>
+          <div className={styles.titleElement}>
+            <h1>Entre em contato:</h1>
+            <h3>Me envie um email, que retornarei sua mensagem.</h3>
+            <span className={styles.socials}>
+              <Link href="https://github.com/glauber2k2" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/github.png"
+                    width={25}
+                    height={25}
+                    alt=""
+                    className={styles.socialIcon}
+                  />
+                </a>
+              </Link>
+
+              <Link
+                href="https://www.linkedin.com/in/glauber-monteiro-40439b238/"
+                legacyBehavior
+              >
+                <a target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/linkedin.webp"
+                    width={25}
+                    height={25}
+                    alt=""
+                    className={styles.socialIcon}
+                  />
+                </a>
+              </Link>
+
+              <Link href="https://www.instagram.com/glauber.sm/" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/insta.png"
+                    width={25}
+                    height={25}
+                    alt=""
+                    className={styles.socialIcon}
+                  />
+                </a>
+              </Link>
+            </span>
+          </div>
+
+          <div className={styles.contactcontainer}>
+            <Image src="/images/airplane.svg" width={280} height={280} alt="" />
+            <form
+              action="https://formsubmit.co/69079625f263f6861d9c3bff3ab50743"
+              method="POST"
+            >
+              <label for="email">Seu Email:</label>
+              <input type="email" name="email" required />
+              <label for="message">Sua Proposta:</label>
+              <textarea type="text-area" name="message" required />
+              <button type="submit"> Enviar </button>
+            </form>
+          </div>
+        </div>
       </div>
-      <Footer />
     </>
   );
 }

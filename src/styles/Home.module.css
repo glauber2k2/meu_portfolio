@@ -3,6 +3,16 @@
   padding: 2rem;
 }
 
+.container h1,
+.container h3 {
+  color: #afacff;
+  font-weight: bold;
+}
+
+.container h4 {
+  color: #a2ffe9;
+}
+
 .profile {
   display: flex;
   border-radius: 300px;
@@ -12,16 +22,6 @@
   display: flex;
   gap: 3rem;
   margin-bottom: 2rem;
-}
-
-.container h1,
-.container h3 {
-  color: #afacff;
-  font-weight: bold;
-}
-
-.container h4 {
-  color: #a2ffe9;
 }
 
 .about h1 {
@@ -98,10 +98,10 @@
   background-image: linear-gradient(to bottom right, #f7df1e, #f7df1e);
   border-radius: 10px;
 }
+
 .titleprojects {
   margin: 2rem auto;
   display: flex;
-
   text-align: center;
   justify-content: center;
 }
@@ -130,7 +130,7 @@
 }
 
 .exp {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .exp span {
@@ -145,10 +145,121 @@
 }
 
 .exp p {
-  color: #e9e9e9;
+  font-size: 20px;
+  color: #e9e9e9ce;
 }
 
-@media (max-width: 768px) {
+.differentialsBox {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 4rem auto;
+}
+
+.differentialsBox h3 {
+  font-size: 20px;
+}
+
+.slideCards {
+  background-color: rgba(121, 121, 121, 0.068);
+  border-radius: 30px;
+}
+
+.slideCards span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.slideCards h3 {
+  color: #ffffff80;
+  padding: 1rem;
+}
+
+.slideCards h1 {
+  padding: 1rem;
+}
+
+.titleElement {
+  font-size: 150%;
+  margin: auto;
+}
+
+.contact {
+  display: flex;
+}
+
+.contactcontainer {
+  background-color: rgb(29, 29, 29);
+  border-radius: 50px;
+  margin-left: auto;
+  padding: 2rem;
+  width: 50%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact h1,
+.contact h3 {
+  padding: 1rem 0 0 0.5rem;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  color: #ffffff59;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 5px;
+}
+
+.socialIcon {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.contact input,
+.contact label,
+.contact textarea {
+  padding-inline: 10px;
+  display: flex;
+  margin: auto;
+  width: 29rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.contact input[type="email"] {
+  height: 1.5rem;
+}
+
+.contact textarea {
+  height: 5rem;
+  resize: none;
+}
+
+.contact button {
+  width: 30rem;
+  height: 2rem;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #ad69ff;
+}
+
+@media (max-width: 912px) {
   .about {
     display: block;
   }
@@ -175,5 +286,121 @@
   .projects h2 {
     margin-bottom: 0.5rem;
     font-size: 80%;
+  }
+
+  .exp {
+    margin-bottom: 0;
+  }
+
+  .exp p {
+    font-size: 12px;
+  }
+
+  .differentialsBox {
+    display: block;
+    margin: 1.5rem auto;
+  }
+
+  .differentialsBox h1,
+  .differentialsBox h3 {
+    display: none;
+  }
+
+  .slideCards span {
+    display: block;
+    text-align: center;
+  }
+
+  .slideCards h3 {
+    display: flex;
+    font-size: 16px;
+  }
+
+  .slideCards h1 {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    padding: 0rem;
+    font-size: 20px;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contactcontainer img {
+    display: none;
+  }
+  .contactcontainer {
+    background-color: rgb(29, 29, 29);
+    border-radius: 50px;
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+    margin-top: 2rem;
+    display: block;
+    align-items: center;
+  }
+
+  .contact h1,
+  .contact h3 {
+    padding: 1rem 0 0 0.5rem;
+    display: block;
+    margin: auto;
+    justify-content: center;
+
+    color: #ffffff59;
+  }
+
+  .contact h1 {
+    font-size: 35px;
+  }
+
+  .contact h3 {
+    font-size: 20px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 15px;
+  }
+
+  .socialIcon {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  .contact input,
+  .contact label,
+  .contact textarea {
+    padding-inline: 0;
+    display: block;
+    margin: auto;
+    width: 15rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .contact input[type="email"] {
+    height: 1.5rem;
+  }
+
+  .contact textarea {
+    height: 5rem;
+    resize: none;
+  }
+
+  .contact button {
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
   }
 }
