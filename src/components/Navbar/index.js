@@ -17,7 +17,7 @@ export default function Navbar() {
           <h1>DEV Glauber Monteiro</h1>
         </div>
         <span>
-          <h3>full-stack developer</h3>{" "}
+          <h3>front-end developer</h3>{" "}
           <p className={styles["typing-animation"]}>|</p>
         </span>
         <div className={styles.link}>
