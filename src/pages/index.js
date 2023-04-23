@@ -342,6 +342,18 @@ export default function Home() {
           >
             <div className="keen-slider__slide number-slide1">
               <span>
+                <Image src="/images/ia.svg" width={50} height={50} alt="" />
+                <h1>Imagens com IA</h1>
+              </span>
+              <h3>
+                Domino o stable diffusion IA, ferramenta de criação de imagens
+                utilizando inteligencia artificial, que agrega bastante para
+                criar imagens especificas e únicas para a aplicação.
+              </h3>
+            </div>
+
+            <div className="keen-slider__slide number-slide2">
+              <span>
                 <Image src="/images/back.svg" width={50} height={50} alt="" />
                 <h1>Entusiasta em back-end</h1>
               </span>
@@ -352,7 +364,7 @@ export default function Home() {
               </h3>
             </div>
 
-            <div className="keen-slider__slide number-slide2">
+            <div className="keen-slider__slide number-slide3">
               <span>
                 <Image src="/images/clean.svg" width={50} height={50} alt="" />
                 <h1>Clean Code</h1>
@@ -364,7 +376,7 @@ export default function Home() {
               </h3>
             </div>
 
-            <div className="keen-slider__slide number-slide3">
+            <div className="keen-slider__slide number-slide4">
               <span>
                 <Image src="/images/eye.svg" width={50} height={50} alt="" />
                 <h1>Percepção de design</h1>

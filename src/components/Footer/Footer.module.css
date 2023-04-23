@@ -1,0 +1,45 @@
+.container {
+  padding: 1rem;
+  display: flex;
+  background-color: #2020205d;
+}
+
+.footcenter {
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  display: block;
+  align-items: center;
+}
+
+.link {
+  gap: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.icon {
+  width: 5rem;
+  height: 5rem;
+  padding-right: 1rem;
+  border-right: 1px solid #ffffff;
+}
+
+.container a {
+  color: #ffb1ce;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    font-size: 15px;
+    display: flex;
+    background-color: #2020205d;
+  }
+
+  .icon {
+    display: none;
+  }
+}
