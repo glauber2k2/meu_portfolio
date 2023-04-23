@@ -386,7 +386,7 @@ export default function Home() {
 
         <hr color="#303030" />
 
-        <div className={styles.contact}>
+        <div className={styles.contact} id="contact">
           <div className={styles.titleElement}>
             <h1>Entre em contato:</h1>
             <h3>Me envie um email, que retornarei sua mensagem.</h3>
