@@ -1,12 +1,12 @@
-import Navbar from "../components/Navbar";
-import { useKeenSlider } from "keen-slider/react";
+import Navbar from '../components/Navbar';
+import { useKeenSlider } from 'keen-slider/react';
 
-import styles from "../styles/Home.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
+import styles from '../styles/Home.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
 
-import "keen-slider/keen-slider.min.css";
+import 'keen-slider/keen-slider.min.css';
 
 const animation = { duration: 20000, easing: (t) => t }; //animação da esteira de projetos.
 
@@ -50,20 +50,20 @@ export default function Home() {
             slider.next();
           }, 3000);
         }
-        slider.on("created", () => {
-          slider.container.addEventListener("mouseover", () => {
+        slider.on('created', () => {
+          slider.container.addEventListener('mouseover', () => {
             mouseOver = true;
             clearNextTimeout();
           });
-          slider.container.addEventListener("mouseout", () => {
+          slider.container.addEventListener('mouseout', () => {
             mouseOver = false;
             nextTimeout();
           });
           nextTimeout();
         });
-        slider.on("dragStarted", clearNextTimeout);
-        slider.on("animationEnded", nextTimeout);
-        slider.on("updated", nextTimeout);
+        slider.on('dragStarted', clearNextTimeout);
+        slider.on('animationEnded', nextTimeout);
+        slider.on('updated', nextTimeout);
       },
     ]
   );
@@ -75,12 +75,12 @@ export default function Home() {
       </Head>
       <Navbar />
       <div className={styles.container}>
-        <div className={styles.about} id="about">
+        <div className={styles.about} id='about'>
           <Image
-            src="/images/profile.jpg"
+            src='/images/profile.jpg'
             width={420}
             height={420}
-            alt="foto de perfil"
+            alt='foto de perfil'
             className={styles.profile}
           />
           <span>
@@ -138,178 +138,178 @@ export default function Home() {
           </span>
         </div>
 
-        <div className={styles.skills} id="skills">
+        <div className={styles.skills} id='skills'>
           <h1>Habilidades:</h1>
           <span>
             <Image
-              src="/images/js.png"
+              src='/images/js.png'
               width={50}
               height={50}
               className={styles.js}
-              alt="js"
+              alt='js'
             />
 
             <Image
-              src="/images/next.png"
+              src='/images/next.png'
               width={50}
               height={50}
               className={styles.next}
-              alt="next"
+              alt='next'
             />
 
             <Image
-              src="/images/react.png"
+              src='/images/react.png'
               width={50}
               height={50}
               className={styles.react}
-              alt="react"
+              alt='react'
             />
 
             <Image
-              src="/images/node.png"
+              src='/images/node.png'
               width={50}
               height={50}
               className={styles.node}
-              alt="node"
+              alt='node'
             />
 
             <Image
-              src="/images/html.png"
+              src='/images/html.png'
               width={50}
               height={50}
               className={styles.html}
-              alt="html"
+              alt='html'
             />
 
             <Image
-              src="/images/css.png"
+              src='/images/css.png'
               width={50}
               height={50}
               className={styles.css}
-              alt="css"
+              alt='css'
             />
 
             <Image
-              src="/images/py.png"
+              src='/images/py.png'
               width={40}
               height={40}
               className={styles.py}
-              alt="py"
+              alt='py'
             />
 
             <Image
-              src="/images/django.png"
+              src='/images/django.png'
               width={40}
               height={40}
               className={styles.django}
-              alt="node"
+              alt='node'
             />
           </span>
         </div>
         <h1 className={styles.titleprojects}> Projetos Realizados: </h1>
         <div
-          id="projects"
+          id='projects'
           ref={sliderRef}
-          className={`${styles.projects} ${"keen-slider"}`}
+          className={`${styles.projects} ${'keen-slider'}`}
         >
-          <span className="keen-slider__slide">
+          <span className='keen-slider__slide'>
             <h2>Hamburgueria</h2>
             <Link
-              href="https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app"
+              href='https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app'
               legacyBehavior
             >
-              <a target="_blank" rel="noopener noreferrer">
+              <a target='_blank' rel='noopener noreferrer'>
                 <Image
-                  src="/images/burguer.png"
+                  src='/images/burguer.png'
                   width={420}
                   height={300}
-                  alt="burguer"
+                  alt='burguer'
                   className={styles.imgproject}
                 />
               </a>
             </Link>
           </span>
 
-          <span className="keen-slider__slide">
+          <span className='keen-slider__slide'>
             <h2>DripStore</h2>
-            <Link href="https://loja-next-js-ebon.vercel.app" legacyBehavior>
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href='https://loja-next-js-ebon.vercel.app' legacyBehavior>
+              <a target='_blank' rel='noopener noreferrer'>
                 <Image
-                  src="/images/drip.png"
+                  src='/images/drip.png'
                   width={420}
                   height={300}
                   className={styles.imgproject}
-                  alt="DripStore"
+                  alt='DripStore'
                 />
               </a>
             </Link>
           </span>
 
-          <span className="keen-slider__slide">
+          <span className='keen-slider__slide'>
             <h2>Rede Social</h2>
-            <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href='https://redesocial-seven.vercel.app' legacyBehavior>
+              <a target='_blank' rel='noopener noreferrer'>
                 <Image
-                  src="/images/rede.png"
+                  src='/images/rede.png'
                   width={420}
                   height={300}
                   className={styles.imgproject}
-                  alt="rede"
+                  alt='rede'
                 />
               </a>
             </Link>
           </span>
 
-          <span className="keen-slider__slide">
+          <span className='keen-slider__slide'>
             <h2>Hamburgueria</h2>
             <Link
-              href="https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app"
+              href='https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app'
               legacyBehavior
             >
-              <a target="_blank" rel="noopener noreferrer">
+              <a target='_blank' rel='noopener noreferrer'>
                 <Image
-                  src="/images/burguer.png"
+                  src='/images/burguer.png'
                   width={420}
                   height={300}
-                  alt="burguer"
+                  alt='burguer'
                   className={styles.imgproject}
                 />
               </a>
             </Link>
           </span>
 
-          <span className="keen-slider__slide">
+          <span className='keen-slider__slide'>
             <h2>DripStore</h2>
-            <Link href="https://loja-next-js-ebon.vercel.app" legacyBehavior>
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href='https://loja-next-js-ebon.vercel.app' legacyBehavior>
+              <a target='_blank' rel='noopener noreferrer'>
                 <Image
-                  src="/images/drip.png"
+                  src='/images/drip.png'
                   width={420}
                   height={300}
                   className={styles.imgproject}
-                  alt="DripStore"
+                  alt='DripStore'
                 />
               </a>
             </Link>
           </span>
 
-          <span className="keen-slider__slide">
+          <span className='keen-slider__slide'>
             <h2>Rede Social</h2>
-            <Link href="https://redesocial-seven.vercel.app" legacyBehavior>
-              <a target="_blank" rel="noopener noreferrer">
+            <Link href='https://redesocial-seven.vercel.app' legacyBehavior>
+              <a target='_blank' rel='noopener noreferrer'>
                 <Image
-                  src="/images/rede.png"
+                  src='/images/rede.png'
                   width={420}
                   height={300}
                   className={styles.imgproject}
-                  alt="rede"
+                  alt='rede'
                 />
               </a>
             </Link>
           </span>
         </div>
-        <hr color="#303030" />
-        <div className={styles.exp} id="exp">
+        <hr color='#303030' />
+        <div className={styles.exp} id='exp'>
           <h1>Experiencias:</h1>
           <br />
           <span>
@@ -334,15 +334,15 @@ export default function Home() {
         <div className={styles.differentialsBox}>
           <div
             ref={secondSliderRef}
-            className={`${"keen-slider"} ${styles.slideCards}`}
+            className={`${'keen-slider'} ${styles.slideCards}`}
             style={{
               width: `${100}%`,
               height: `${100}%`,
             }}
           >
-            <div className="keen-slider__slide number-slide1">
+            <div className='keen-slider__slide number-slide1'>
               <span>
-                <Image src="/images/ia.svg" width={50} height={50} alt="" />
+                <Image src='/images/ia.svg' width={50} height={50} alt='' />
                 <h1>Imagens com IA</h1>
               </span>
               <h3>
@@ -352,9 +352,9 @@ export default function Home() {
               </h3>
             </div>
 
-            <div className="keen-slider__slide number-slide2">
+            <div className='keen-slider__slide number-slide2'>
               <span>
-                <Image src="/images/back.svg" width={50} height={50} alt="" />
+                <Image src='/images/back.svg' width={50} height={50} alt='' />
                 <h1>Entusiasta em back-end</h1>
               </span>
               <h3>
@@ -364,9 +364,9 @@ export default function Home() {
               </h3>
             </div>
 
-            <div className="keen-slider__slide number-slide3">
+            <div className='keen-slider__slide number-slide3'>
               <span>
-                <Image src="/images/clean.svg" width={50} height={50} alt="" />
+                <Image src='/images/clean.svg' width={50} height={50} alt='' />
                 <h1>Clean Code</h1>
               </span>
               <h3>
@@ -376,9 +376,9 @@ export default function Home() {
               </h3>
             </div>
 
-            <div className="keen-slider__slide number-slide4">
+            <div className='keen-slider__slide number-slide4'>
               <span>
-                <Image src="/images/eye.svg" width={50} height={50} alt="" />
+                <Image src='/images/eye.svg' width={50} height={50} alt='' />
                 <h1>Percepção de design</h1>
               </span>
               <h3>
@@ -396,47 +396,47 @@ export default function Home() {
           </div>
         </div>
 
-        <hr color="#303030" />
+        <hr color='#303030' />
 
-        <div className={styles.contact} id="contact">
+        <div className={styles.contact} id='contact'>
           <div className={styles.titleElement}>
             <h1>Entre em contato:</h1>
             <h3>Me envie um email, que retornarei sua mensagem.</h3>
             <span className={styles.socials}>
-              <Link href="https://github.com/glauber2k2" legacyBehavior>
-                <a target="_blank" rel="noopener noreferrer">
+              <Link href='https://github.com/glauber2k2' legacyBehavior>
+                <a target='_blank' rel='noopener noreferrer'>
                   <Image
-                    src="/images/github.png"
+                    src='/images/github.png'
                     width={25}
                     height={25}
-                    alt=""
+                    alt=''
                     className={styles.socialIcon}
                   />
                 </a>
               </Link>
 
               <Link
-                href="https://www.linkedin.com/in/glauber-monteiro-40439b238/"
+                href='https://www.linkedin.com/in/glauber-monteiro-40439b238/'
                 legacyBehavior
               >
-                <a target="_blank" rel="noopener noreferrer">
+                <a target='_blank' rel='noopener noreferrer'>
                   <Image
-                    src="/images/linkedin.webp"
+                    src='/images/linkedin.webp'
                     width={25}
                     height={25}
-                    alt=""
+                    alt=''
                     className={styles.socialIcon}
                   />
                 </a>
               </Link>
 
-              <Link href="https://www.instagram.com/glauber.sm/" legacyBehavior>
-                <a target="_blank" rel="noopener noreferrer">
+              <Link href='https://www.instagram.com/devglauber/' legacyBehavior>
+                <a target='_blank' rel='noopener noreferrer'>
                   <Image
-                    src="/images/insta.png"
+                    src='/images/insta.png'
                     width={25}
                     height={25}
-                    alt=""
+                    alt=''
                     className={styles.socialIcon}
                   />
                 </a>
@@ -445,16 +445,16 @@ export default function Home() {
           </div>
 
           <div className={styles.contactcontainer}>
-            <Image src="/images/airplane.svg" width={280} height={280} alt="" />
+            <Image src='/images/airplane.svg' width={280} height={280} alt='' />
             <form
-              action="https://formsubmit.co/69079625f263f6861d9c3bff3ab50743"
-              method="POST"
+              action='https://formsubmit.co/69079625f263f6861d9c3bff3ab50743'
+              method='POST'
             >
-              <label for="email">Seu Email:</label>
-              <input type="email" name="email" required />
-              <label for="message">Sua Proposta:</label>
-              <textarea type="text-area" name="message" required />
-              <button type="submit"> Enviar </button>
+              <label for='email'>Seu Email:</label>
+              <input type='email' name='email' required />
+              <label for='message'>Sua Proposta:</label>
+              <textarea type='text-area' name='message' required />
+              <button type='submit'> Enviar </button>
             </form>
           </div>
         </div>
