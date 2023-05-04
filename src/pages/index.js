@@ -213,48 +213,15 @@ export default function Home() {
           className={`${styles.projects} ${'keen-slider'}`}
         >
           <span className='keen-slider__slide'>
-            <h2>Hamburgueria</h2>
-            <Link
-              href='https://hamburgueria-nextjs-88eb0hkfa-glauber2k2.vercel.app'
-              legacyBehavior
-            >
+            <h2>E-Commerce</h2>
+            <Link href='https://e-commerce-six-smoky.vercel.app' legacyBehavior>
               <a target='_blank' rel='noopener noreferrer'>
                 <Image
-                  src='/images/burguer.png'
+                  src='/images/ecommerce.png'
                   width={420}
                   height={300}
-                  alt='burguer'
+                  alt='ecommerce'
                   className={styles.imgproject}
-                />
-              </a>
-            </Link>
-          </span>
-
-          <span className='keen-slider__slide'>
-            <h2>DripStore</h2>
-            <Link href='https://loja-next-js-ebon.vercel.app' legacyBehavior>
-              <a target='_blank' rel='noopener noreferrer'>
-                <Image
-                  src='/images/drip.png'
-                  width={420}
-                  height={300}
-                  className={styles.imgproject}
-                  alt='DripStore'
-                />
-              </a>
-            </Link>
-          </span>
-
-          <span className='keen-slider__slide'>
-            <h2>Rede Social</h2>
-            <Link href='https://redesocial-seven.vercel.app' legacyBehavior>
-              <a target='_blank' rel='noopener noreferrer'>
-                <Image
-                  src='/images/rede.png'
-                  width={420}
-                  height={300}
-                  className={styles.imgproject}
-                  alt='rede'
                 />
               </a>
             </Link>
