@@ -5,12 +5,12 @@
 
 .container h1,
 .container h3 {
-  color: #afacff;
+  color: #a8a5ff;
   font-weight: bold;
 }
 
 .container h4 {
-  color: #a2ffe9;
+  color: #02fae1;
 }
 
 .profile {
@@ -126,7 +126,7 @@
 }
 
 .imgproject:hover {
-  border: solid 2px #ad69ff;
+  border: solid 2px #9a36f7;
 }
 
 .exp {
@@ -134,7 +134,7 @@
 }
 
 .exp span {
-  color: #ad69ff;
+  color: #9a36f7;
   margin-top: 2rem;
 }
 
@@ -195,12 +195,11 @@
 .contactcontainer {
   background-color: rgb(29, 29, 29);
   border-radius: 50px;
-  margin-left: auto;
-  padding: 2rem;
-  width: 50%;
+  padding: 1.5rem 4rem;
   margin-top: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1em;
 }
 
 .contact h1,
@@ -210,6 +209,31 @@
   margin: auto;
   justify-content: center;
   color: #ffffff59;
+}
+
+.contact input,
+.contact label,
+.contact textarea {
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.contact textarea {
+  height: 5rem;
+  resize: none;
+}
+
+.contact button {
+  margin: auto;
+  width: 104%;
+  height: 2em;
+}
+
+.contact button:hover {
+  background-color: #9a36f7;
 }
 
 .socials {
@@ -224,40 +248,6 @@
   padding: 8px;
   border-radius: 16px;
   cursor: pointer;
-}
-
-.contact input,
-.contact label,
-.contact textarea {
-  padding: 10px;
-  display: flex;
-  margin: auto;
-  width: 29rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-}
-
-.contact input[type="email"] {
-  height: 1.5rem;
-}
-
-.contact textarea {
-  height: 5rem;
-  resize: none;
-}
-
-.contact button {
-  width: 30rem;
-  height: 2rem;
-  display: flex;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background-color: #ad69ff;
 }
 
 @media (max-width: 912px) {
@@ -391,7 +381,7 @@
     border-radius: 10px;
   }
 
-  .contact input[type="email"] {
+  .contact input[type='email'] {
     height: 1.5rem;
   }
 

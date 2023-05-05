@@ -412,7 +412,7 @@ export default function Home() {
           </div>
 
           <div className={styles.contactcontainer}>
-            <Image src='/images/airplane.svg' width={280} height={280} alt='' />
+            <Image src='/images/airplane.svg' width={200} height={200} alt='' />
             <form
               action='https://formsubmit.co/69079625f263f6861d9c3bff3ab50743'
               method='POST'
@@ -421,6 +421,7 @@ export default function Home() {
               <input type='email' name='email' required />
               <label for='message'>Sua Proposta:</label>
               <textarea type='text-area' name='message' required />
+
               <button type='submit'> Enviar </button>
             </form>
           </div>

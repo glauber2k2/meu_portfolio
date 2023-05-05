@@ -24,7 +24,7 @@
   width: 170px;
   display: flex;
 
-  color: #ad69ff;
+  color: #9a36f7;
 }
 
 .container span p {
@@ -68,7 +68,7 @@
 .link a {
   cursor: pointer;
   font-size: 15px;
-  color: #fff6ab;
+  color: #8fffb1;
   gap: 2rem;
   text-decoration: none;
 }
