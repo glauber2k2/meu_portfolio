@@ -18,16 +18,16 @@ export default function Home() {
     },
 
     loop: true,
-
-    drag: false,
+    renderMode: 'performance',
+    drag: true,
     created(s) {
-      s.moveToIdx(2, true, animation);
+      s.moveToIdx(5, true, animation);
     },
     updated(s) {
-      s.moveToIdx(s.track.details.abs + 2, true, animation);
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
     animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 2, true, animation);
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
   });
 
@@ -56,7 +56,7 @@ export default function Home() {
             clearNextTimeout();
           });
           slider.container.addEventListener('mouseout', () => {
-            mouseOver = false;
+            mouseOver = true;
             nextTimeout();
           });
           nextTimeout();
