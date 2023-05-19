@@ -81,15 +81,9 @@
   border-radius: 10px;
 }
 
-.py {
-  padding: 8px;
-  background-image: linear-gradient(to bottom right, #234e9c, #0f037c);
-  border-radius: 10px;
-}
-
-.django {
-  padding: 8px;
-  background-image: linear-gradient(to bottom right, #0d7200, #005a4e);
+.ts {
+  padding: 3px;
+  background-image: linear-gradient(to bottom right, #0051ff, #0051ff);
   border-radius: 10px;
 }
 

@@ -190,19 +190,11 @@ export default function Home() {
             />
 
             <Image
-              src='/images/py.png'
-              width={40}
-              height={40}
-              className={styles.py}
-              alt='py'
-            />
-
-            <Image
-              src='/images/django.png'
-              width={40}
-              height={40}
-              className={styles.django}
-              alt='node'
+              src='/images/ts.png'
+              width={50}
+              height={50}
+              className={styles.ts}
+              alt='ts'
             />
           </span>
         </div>
