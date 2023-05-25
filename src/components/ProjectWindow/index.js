@@ -13,7 +13,10 @@ export default function ProjectWindow() {
           <h1>ROLE P/ BAIXO</h1>
         </div>
 
-        <Link href='/' legacyBehavior>
+        <Link
+          href='https://vercel.com/glauber2k2/hamburgueria-nextjs'
+          legacyBehavior
+        >
           <div className={styles.inWindow}>
             <Image
               src='/images/project_image/niceburguer.jpg'
@@ -25,7 +28,7 @@ export default function ProjectWindow() {
           </div>
         </Link>
 
-        <Link href='/' legacyBehavior>
+        <Link href='https://vercel.com/glauber2k2/e-commerce' legacyBehavior>
           <div className={styles.inWindow}>
             <Image
               src='/images/project_image/ecommerce.jpg'
@@ -37,7 +40,7 @@ export default function ProjectWindow() {
           </div>
         </Link>
 
-        <Link href='/' legacyBehavior>
+        <Link href='https://vercel.com/glauber2k2/trinity' legacyBehavior>
           <div className={styles.inWindow}>
             <Image
               src='/images/project_image/trinity.jpg'
@@ -49,7 +52,7 @@ export default function ProjectWindow() {
           </div>
         </Link>
 
-        <Link href='/' legacyBehavior>
+        <Link href='https://vercel.com/glauber2k2/redesocial' legacyBehavior>
           <div className={styles.inWindow}>
             <Image
               src='/images/project_image/rede.jpg'
