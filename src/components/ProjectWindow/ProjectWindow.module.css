@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container img {
+  display: flex;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 0px 10px #a8a5ff);
+}
+
+.window {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 76.2%; /* Defina a largura da div conforme necessário */
+  height: 76.2%; /* Defina a altura da div conforme necessário */
+  overflow: auto; /* Cria a barra de rolagem */
+  border: 5px solid rgb(0, 0, 0); /* Adiciona uma borda à div (opcional) */
+  margin: 4.1% 10.6%;
+  z-index: 1;
+  background-color: black;
+}
+
+.inWindow,
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 1.5rem 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.inWindow img,
+.logo img {
+  width: 80%;
+  height: 80%;
+  background-color: #ff6780;
+  filter: drop-shadow(0px 0px 10px #ff6780);
+  object-fit: cover;
+}
+
+.logo img {
+  object-fit: scale-down;
+}
+.container h1 {
+  margin-top: 0.5rem;
+  font-weight: 100;
+}
