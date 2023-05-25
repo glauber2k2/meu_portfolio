@@ -20,6 +20,10 @@ export default function Navbar() {
     }); // Inicializa a biblioteca AOS
   }, []);
 
+  const abrirNovaAba = () => {
+    window.open('https://wa.me/message/RS2XYE5ZIENTB1', '_blank');
+  };
+
   return (
     <div className={styles.container}>
       <nav className={styles.navContainer}>
@@ -73,7 +77,12 @@ export default function Navbar() {
           websites. Atualmente moro em João Pessoa, PB!
         </p>
 
-        <button className={styles.msg} data-aos='fade-up' data-aos-delay='900'>
+        <button
+          onClick={abrirNovaAba}
+          className={styles.msg}
+          data-aos='fade-up'
+          data-aos-delay='900'
+        >
           <span className={styles.msgContent}>
             <WhatsappLogo size={32} weight='thin' />
             Mandar mensagem

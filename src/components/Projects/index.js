@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <main className={styles.container}>
       <div className={styles.topContainer}>
-        <div className={styles.title}>
+        <div className={styles.title} data-aos='fade-up' data-aos-delay='100'>
           <h1>
             MEUS <span>PROJETOS</span>
           </h1>
@@ -17,13 +17,15 @@ export default function Projects() {
             que um site bem feito é capaz de passar ao acessante.
           </h3>
         </div>
-        <div className={styles.images}>
+        <div className={styles.images} data-aos='fade-up' data-aos-delay='150'>
           <Image
             src='/images/projects1.png'
             width={1280}
             height={1280}
             alt=''
             className={styles.image1}
+            data-aos='fade-up'
+            data-aos-delay='200'
           />
 
           <Image
@@ -32,6 +34,8 @@ export default function Projects() {
             height={1280}
             alt=''
             className={styles.image2}
+            data-aos='fade-up'
+            data-aos-delay='250'
           />
 
           <Image
@@ -40,6 +44,8 @@ export default function Projects() {
             height={1280}
             alt=''
             className={styles.image3}
+            data-aos='fade-up'
+            data-aos-delay='300'
           />
 
           <Image
@@ -48,21 +54,28 @@ export default function Projects() {
             height={1280}
             alt=''
             className={styles.image4}
+            data-aos='fade-up'
+            data-aos-delay='350'
           />
         </div>
       </div>
       <div className={styles.bottomContainer}>
-        <div className={styles.notebook}>
+        <div
+          className={styles.notebook}
+          data-aos='zoom-in-up'
+          data-aos-delay='100'
+          data-aos-duration='1000'
+        >
           <ProjectWindow />
         </div>
 
         <ArrowsVertical size={64} color='#fcfcfc' weight='duotone' />
         <div className={styles.projectMsg}>
-          <h2>
+          <h2 data-aos='fade-up' data-aos-delay='150'>
             Use o notebook para <span>visualizar</span> os projetos.
           </h2>
 
-          <h3>
+          <h3 data-aos='fade-up' data-aos-delay='200'>
             Clique no projeto que deseja visualizar, e automaticamente será
             <span>redirecionado</span> para a visualização completa da página.
           </h3>
