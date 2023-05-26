@@ -97,7 +97,11 @@ export default function Presentation() {
           />
         </span>
 
-        <div data-aos='fade-up' data-aos-delay='100'>
+        <div
+          data-aos='fade-up'
+          data-aos-delay='100'
+          className={styles.detailsH1}
+        >
           <h1 className={styles.fillh1}>DIFERENCIAIS</h1>
           <h1 className={styles.thinh1}>DIFERENCIAIS</h1>
           <h1 className={styles.fillh1}>DIFERENCIAIS</h1>

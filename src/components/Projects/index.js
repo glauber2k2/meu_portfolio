@@ -71,11 +71,11 @@ export default function Projects() {
 
         <ArrowsVertical size={64} color='#fcfcfc' weight='duotone' />
         <div className={styles.projectMsg}>
-          <h2 data-aos='fade-up' data-aos-delay='150'>
+          <h2 data-aos='fade-up' data-aos-delay='100'>
             Use o notebook para <span>visualizar</span> os projetos.
           </h2>
 
-          <h3 data-aos='fade-up' data-aos-delay='200'>
+          <h3 data-aos='fade-up' data-aos-delay='100'>
             Clique no projeto que deseja visualizar, e automaticamente será
             <span>redirecionado</span> para a visualização completa da página.
           </h3>

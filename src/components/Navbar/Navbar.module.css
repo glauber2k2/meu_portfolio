@@ -165,7 +165,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -187,18 +187,26 @@
   }
 
   .name {
-    margin: 40% 0 auto 0;
+    margin: 8rem 30% auto 0;
     padding: 1rem;
+    width: 80%;
+    text-align: justify;
   }
 
   .name h1 {
-    font-size: 62px;
+    font-size: 42px;
     margin-top: -1rem;
   }
 
   .name p {
-    width: 100%;
+    width: 80%;
     font-size: 14px;
     letter-spacing: 0px;
+    margin-bottom: 0.5rem;
+  }
+
+  .msg {
+    height: 2.5rem;
+    padding: 0 1rem;
   }
 }

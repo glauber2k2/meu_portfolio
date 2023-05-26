@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 3rem 2rem;
 }
 
@@ -31,8 +31,8 @@
 
 .skills span {
   display: flex;
-  width: 9rem;
-  height: 15rem;
+  width: 10vw;
+  height: 16vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -72,13 +72,13 @@
 }
 
 .diferentials span h1 {
-  font-size: 55px;
+  font-size: 4vw;
   color: #9a36f7;
   padding: 2rem;
 }
 
 .diferentials span p {
-  font-size: 22px;
+  font-size: 1.2vw;
   color: #9a36f7;
   padding: 2rem;
 }
@@ -88,8 +88,8 @@
   position: absolute;
   object-fit: scale-down;
   width: 100%;
-  height: 20rem;
-  top: -10%;
+  height: 100%;
+  top: -30%;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.705));
 }
 
@@ -98,26 +98,28 @@
   position: absolute;
   object-fit: scale-down;
   width: 100%;
-  height: 15rem;
+  height: 50%;
   bottom: -5%;
   left: -40%;
 }
 
-.fillh1,
-.thinh1 {
-  font-size: 52px;
-  opacity: 30%;
-  margin: 10% 0;
+.detailsH1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+  gap: 1vw;
 }
 
 .fillh1 {
   font-weight: 500;
   color: #9a36f7;
+  opacity: 30%;
 }
 .thinh1 {
   font-weight: 100;
+  opacity: 30%;
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .container {
     padding: 2rem 0.5rem;
     height: 100%;
@@ -137,28 +139,23 @@
 
   .skills span {
     margin-top: 1rem;
-    width: 4rem;
-    height: 100%;
+    width: 19vw;
+    height: 30vw;
   }
 
   .skills span p {
-    font-size: 10px;
-  }
-
-  .fillh1,
-  .thinh1 {
-    display: none;
+    font-size: 3vw;
   }
 
   .diferentials {
-    flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     height: 100%;
     gap: 2rem;
+    flex-wrap: wrap;
   }
 
   .diferentials span {
-    width: 20rem;
+    width: 22rem;
     height: 20rem;
   }
 
@@ -175,7 +172,7 @@
   }
 
   .ia {
-    width: 20rem;
+    width: 100%;
     height: 12rem;
     top: -8%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.705));
@@ -186,5 +183,9 @@
     height: 10rem;
     bottom: -10%;
     left: -13%;
+  }
+
+  .detailsH1 {
+    display: none;
   }
 }
