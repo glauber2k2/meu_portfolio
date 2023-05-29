@@ -6,7 +6,7 @@ import styles from './Projects.module.css';
 
 export default function Projects() {
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id='projects'>
       <div className={styles.topContainer}>
         <div className={styles.title} data-aos='fade-up' data-aos-delay='100'>
           <h1>
@@ -59,7 +59,11 @@ export default function Projects() {
           />
         </div>
       </div>
-      <div className={styles.bottomContainer}>
+      <div
+        className={styles.bottomContainer}
+        data-aos='fade-up'
+        data-aos-delay='350'
+      >
         <div
           className={styles.notebook}
           data-aos='zoom-in-up'
@@ -71,11 +75,11 @@ export default function Projects() {
 
         <ArrowsVertical size={64} color='#fcfcfc' weight='duotone' />
         <div className={styles.projectMsg}>
-          <h2 data-aos='fade-up' data-aos-delay='100'>
+          <h2>
             Use o notebook para <span>visualizar</span> os projetos.
           </h2>
 
-          <h3 data-aos='fade-up' data-aos-delay='100'>
+          <h3>
             Clique no projeto que deseja visualizar, e automaticamente será
             <span>redirecionado</span> para a visualização completa da página.
           </h3>

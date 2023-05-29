@@ -12,7 +12,7 @@ import styles from './Presentation.module.css';
 
 export default function Presentation() {
   return (
-    <main className={styles.container}>
+    <main className={styles.container} id='skills'>
       <div className={styles.skills} data-aos='fade-up' data-aos-delay='100'>
         <div data-aos='fade-up' data-aos-delay='100'>
           <span>

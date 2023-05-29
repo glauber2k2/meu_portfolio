@@ -40,16 +40,13 @@ export default function Navbar() {
           <div
             className={styles.button}
             data-aos='fade-up'
-            data-aos-delay='300'
-          >
-            <ProjectorScreen size={32} weight='fill' />
-            <p>Projetos</p>
-          </div>
-
-          <div
-            className={styles.button}
-            data-aos='fade-up'
             data-aos-delay='400'
+            onClick={() => {
+              const targetElement = document.getElementById('skills');
+              if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             <MouseSimple size={32} weight='fill' />
             <p>Habilidades</p>
@@ -58,7 +55,28 @@ export default function Navbar() {
           <div
             className={styles.button}
             data-aos='fade-up'
+            data-aos-delay='300'
+            onClick={() => {
+              const targetElement = document.getElementById('projects');
+              if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
+            <ProjectorScreen size={32} weight='fill' />
+            <p>Projetos</p>
+          </div>
+
+          <div
+            className={styles.button}
+            data-aos='fade-up'
             data-aos-delay='500'
+            onClick={() => {
+              const targetElement = document.getElementById('contact');
+              if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             <PaperPlaneTilt size={32} weight='fill' />
             <p>Contato</p>
@@ -95,6 +113,12 @@ export default function Navbar() {
         className={styles.scrollDown}
         data-aos='fade-up'
         data-aos-delay='2000'
+        onClick={() => {
+          const targetElement = document.getElementById('skills');
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }}
       />
     </div>
   );
