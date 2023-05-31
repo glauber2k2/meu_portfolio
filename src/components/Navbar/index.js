@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 import { useEffect } from 'react';
 import {
@@ -9,6 +10,9 @@ import {
   MouseSimple,
   WhatsappLogo,
   CaretDown,
+  InstagramLogo,
+  GithubLogo,
+  LinkedinLogo,
 } from 'phosphor-react';
 
 import styles from './Navbar.module.css';
@@ -20,8 +24,23 @@ export default function Navbar() {
     }); // Inicializa a biblioteca AOS
   }, []);
 
-  const abrirNovaAba = () => {
+  const abrirWpp = () => {
     window.open('https://wa.me/message/RS2XYE5ZIENTB1', '_blank');
+  };
+
+  const abrirInsta = () => {
+    window.open('https://www.instagram.com/devglauber/', '_blank');
+  };
+
+  const abrirGit = () => {
+    window.open('https://github.com/glauber2k2/', '_blank');
+  };
+
+  const abrirLinkedin = () => {
+    window.open(
+      'https://www.linkedin.com/in/glauber-monteiro-40439b238/',
+      '_blank'
+    );
   };
 
   return (
@@ -96,7 +115,7 @@ export default function Navbar() {
         </p>
 
         <button
-          onClick={abrirNovaAba}
+          onClick={abrirWpp}
           className={styles.msg}
           data-aos='fade-up'
           data-aos-delay='900'
@@ -105,6 +124,20 @@ export default function Navbar() {
             <WhatsappLogo size={32} weight='fill' />
             Mandar mensagem
           </span>
+        </button>
+
+        <button onClick={abrirInsta} data-aos='fade-up' data-aos-delay='950'>
+          <InstagramLogo size={28} weight='fill' />
+        </button>
+        <button onClick={abrirGit} data-aos='fade-up' data-aos-delay='1000'>
+          <GithubLogo size={28} weight='fill' />
+        </button>
+        <button
+          onClick={abrirLinkedin}
+          data-aos='fade-up'
+          data-aos-delay='1050'
+        >
+          <LinkedinLogo size={28} weight='fill' />
         </button>
       </div>
       <CaretDown

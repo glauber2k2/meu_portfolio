@@ -114,6 +114,17 @@
   margin-bottom: 2rem;
 }
 
+.name button:not(.msg) {
+  background: #292929;
+  box-shadow: 2px 2px 21px #151515, -2px -2px 5px #8a8a8a;
+  margin-left: 1%;
+  padding: 0.5rem;
+  border-radius: 100px;
+  border: none;
+  color: #dbdbdb;
+  cursor: pointer;
+}
+
 .msg {
   position: relative;
   overflow: hidden;
@@ -158,9 +169,12 @@
 }
 
 .scrollDown {
+  position: absolute;
   display: flex;
   margin: auto;
   animation: arrowAnimation 1.5s infinite;
+  left: 50%;
+  bottom: 8%;
 }
 
 @keyframes arrowAnimation {
