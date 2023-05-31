@@ -48,7 +48,7 @@ export default function Navbar() {
               }
             }}
           >
-            <MouseSimple size={32} weight='fill' />
+            <MouseSimple size={26} weight='fill' />
             <p>Habilidades</p>
           </div>
 
@@ -63,7 +63,7 @@ export default function Navbar() {
               }
             }}
           >
-            <ProjectorScreen size={32} weight='fill' />
+            <ProjectorScreen size={26} weight='fill' />
             <p>Projetos</p>
           </div>
 
@@ -78,7 +78,7 @@ export default function Navbar() {
               }
             }}
           >
-            <PaperPlaneTilt size={32} weight='fill' />
+            <PaperPlaneTilt size={26} weight='fill' />
             <p>Contato</p>
           </div>
         </div>
@@ -102,14 +102,14 @@ export default function Navbar() {
           data-aos-delay='900'
         >
           <span className={styles.msgContent}>
-            <WhatsappLogo size={32} weight='thin' />
+            <WhatsappLogo size={32} weight='fill' />
             Mandar mensagem
           </span>
         </button>
       </div>
       <CaretDown
         size={42}
-        weight='thin'
+        weight='bold'
         className={styles.scrollDown}
         data-aos='fade-up'
         data-aos-delay='2000'

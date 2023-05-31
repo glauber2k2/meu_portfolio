@@ -8,7 +8,7 @@
   align-items: flex-start;
   width: 100%;
   height: 10vh;
-  padding: 1rem;
+  padding: 1rem 3rem;
   position: relative;
 }
 
@@ -35,7 +35,7 @@
   width: 100%;
   height: 100%;
   background-image: url('/images/background.png');
-  filter: contrast(105%) brightness(75%);
+  filter: contrast(105%) brightness(85%);
   background-size: cover;
   background-position: center 10%;
   z-index: -2;
@@ -60,7 +60,7 @@
 
 .title h1 {
   font-size: 32px;
-  color: #a8a5ff;
+  color: #9a36f7;
   font-weight: 500;
   letter-spacing: -1px;
 }
@@ -68,7 +68,7 @@
 .title h3 {
   margin-top: -0.5rem;
   margin-left: 10%;
-  color: #fff;
+  color: #dbdbdb;
   font-weight: 500;
   letter-spacing: -2px;
 }
@@ -86,6 +86,13 @@
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
+  background-color: #292929;
+  box-shadow: 3px 3px 21px #151515, -3px -3px 5px #8a8a8a;
+  border-radius: 50px;
+  padding: 2%;
+  color: #dbdbdb;
+  font-weight: bold;
+  font-size: 0.8vw;
 }
 
 .name {
@@ -97,7 +104,7 @@
   font-size: 150px;
   letter-spacing: 5px;
   margin-top: -3rem;
-  color: #a8a5ff;
+  color: #dbdbdb;
 }
 
 .name p {
@@ -113,12 +120,14 @@
   height: 3rem;
   padding: 0 2rem;
   border-radius: 1.5rem;
-  background: linear-gradient(70.3deg, #a8a5ff 10.8%, #9a36f7 54.3%);
+  background: #292929;
+  box-shadow: 3px 3px 21px #151515, -3px -3px 5px #8a8a8a;
   background-size: 400%;
-  color: #000;
+  color: #5dc054;
   border: none;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .msg:hover::before {
@@ -143,7 +152,8 @@
   width: 100%;
   height: inherit;
   border-radius: inherit;
-  background: linear-gradient(82.3deg, #ff6780 10.8%, #9a36f7 94.3%);
+  background: linear-gradient(82.3deg, #000000 10.8%, #292929 94.3%);
+  box-shadow: 10px 10px 50px #ffffff, -10px -10px 50px #ffffff;
   transition: all 0.475s;
 }
 
