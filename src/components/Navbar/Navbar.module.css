@@ -81,7 +81,7 @@
   font-weight: 300;
 }
 
-.button {
+.buttons button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +93,8 @@
   color: #dbdbdb;
   font-weight: bold;
   font-size: 0.8vw;
+  border: none;
+  cursor: pointer;
 }
 
 .name {
@@ -125,6 +127,11 @@
   cursor: pointer;
 }
 
+.name button:hover,
+.buttons button:hover {
+  color: #9a36f7;
+}
+
 .msg {
   position: relative;
   overflow: hidden;
@@ -134,7 +141,7 @@
   background: #292929;
   box-shadow: 3px 3px 21px #151515, -3px -3px 5px #8a8a8a;
   background-size: 400%;
-  color: #5dc054;
+  color: #fff;
   border: none;
   cursor: pointer;
   font-weight: bold;

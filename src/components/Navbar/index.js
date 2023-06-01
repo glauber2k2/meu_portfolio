@@ -56,8 +56,7 @@ export default function Navbar() {
         </div>
 
         <div className={styles.buttons}>
-          <div
-            className={styles.button}
+          <button
             data-aos='fade-up'
             data-aos-delay='400'
             onClick={() => {
@@ -69,10 +68,9 @@ export default function Navbar() {
           >
             <MouseSimple size={26} weight='fill' />
             <p>Habilidades</p>
-          </div>
+          </button>
 
-          <div
-            className={styles.button}
+          <button
             data-aos='fade-up'
             data-aos-delay='300'
             onClick={() => {
@@ -84,22 +82,7 @@ export default function Navbar() {
           >
             <ProjectorScreen size={26} weight='fill' />
             <p>Projetos</p>
-          </div>
-
-          <div
-            className={styles.button}
-            data-aos='fade-up'
-            data-aos-delay='500'
-            onClick={() => {
-              const targetElement = document.getElementById('contact');
-              if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-          >
-            <PaperPlaneTilt size={26} weight='fill' />
-            <p>Contato</p>
-          </div>
+          </button>
         </div>
       </nav>
       <div className={styles.name}>
