@@ -180,7 +180,8 @@
   display: flex;
   margin: auto;
   animation: arrowAnimation 1.5s infinite;
-  left: 50%;
+  left: 0%;
+  width: 100%;
   bottom: 8%;
   cursor: pointer;
 }
