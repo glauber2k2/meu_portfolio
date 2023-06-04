@@ -104,7 +104,7 @@ export default function Navbar() {
           data-aos-delay='900'
         >
           <span className={styles.msgContent}>
-            <WhatsappLogo size={32} weight='fill' />
+            <WhatsappLogo size={28} weight='fill' />
             Mandar mensagem
           </span>
         </button>

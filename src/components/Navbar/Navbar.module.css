@@ -86,15 +86,15 @@
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
-  background-color: #292929;
-  box-shadow: 3px 3px 21px #151515, -3px -3px 5px #8a8a8a;
+  background: transparent;
+  border: none;
   border-radius: 50px;
-  padding: 2%;
+  padding: 2% 4%;
   color: #dbdbdb;
   font-weight: bold;
-  font-size: 0.8vw;
-  border: none;
+  font-size: 18px;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .name {
@@ -117,8 +117,7 @@
 }
 
 .name button:not(.msg) {
-  background: #292929;
-  box-shadow: 2px 2px 21px #151515, -2px -2px 5px #8a8a8a;
+  background: transparent;
   margin-left: 1%;
   padding: 0.5rem;
   border-radius: 100px;
@@ -198,7 +197,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -209,6 +208,11 @@
     flex-direction: column;
     align-items: center;
     gap: 0rem;
+  }
+
+  .msg {
+    width: 13rem;
+    font-size: 2.7vw;
   }
 
   .buttons {

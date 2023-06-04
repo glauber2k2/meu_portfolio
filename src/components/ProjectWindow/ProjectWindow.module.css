@@ -30,6 +30,17 @@
   background-color: black;
 }
 
+.window::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+.window::-webkit-scrollbar {
+  width: 2px;
+  background: #000000;
+}
+.window::-webkit-scrollbar-thumb {
+  background: #ff6780;
+}
+
 .logo,
 .niceBurguer,
 .commerce,

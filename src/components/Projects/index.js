@@ -76,7 +76,7 @@ export default function Projects() {
         <ArrowsVertical size={64} color='#fcfcfc' weight='duotone' />
         <div className={styles.projectMsg}>
           <h2>
-            Use o notebook para <span>visualizar</span> os projetos.
+            Use o notebook para <span>visualizar</span> os meus projetos.
           </h2>
 
           <h3>
