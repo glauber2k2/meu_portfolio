@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import {
   ProjectorScreen,
-  PaperPlaneTilt,
   MouseSimple,
   WhatsappLogo,
   CaretDown,
@@ -55,10 +54,8 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className={styles.buttons}>
+        <div className={styles.nav} data-aos='fade-up' data-aos-delay='400'>
           <button
-            data-aos='fade-up'
-            data-aos-delay='400'
             onClick={() => {
               const targetElement = document.getElementById('skills');
               if (targetElement) {
@@ -71,8 +68,6 @@ export default function Navbar() {
           </button>
 
           <button
-            data-aos='fade-up'
-            data-aos-delay='300'
             onClick={() => {
               const targetElement = document.getElementById('projects');
               if (targetElement) {
@@ -85,7 +80,7 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
-      <div className={styles.name}>
+      <main>
         <h1 data-aos='fade-up' data-aos-delay='600'>
           Glauber
         </h1>
@@ -96,46 +91,36 @@ export default function Navbar() {
           Sou desenvolvedor front-end, tenho 21 anos e trabalho com criação de
           websites. Atualmente moro em João Pessoa, PB!
         </p>
+        <div className={styles.mainNav} data-aos='fade-up' data-aos-delay='900'>
+          <button onClick={abrirWpp} className={styles.msg}>
+            <WhatsappLogo weight='fill' />
+            <p>Fale comigo! </p>
+          </button>
 
-        <button
-          onClick={abrirWpp}
-          className={styles.msg}
+          <button onClick={abrirInsta}>
+            <InstagramLogo weight='fill' />
+          </button>
+          <button onClick={abrirGit}>
+            <GithubLogo weight='fill' />
+          </button>
+          <button onClick={abrirLinkedin}>
+            <LinkedinLogo weight='fill' />
+          </button>
+        </div>
+      </main>
+      <div className={styles.scrollDown}>
+        <CaretDown
+          weight='bold'
           data-aos='fade-up'
-          data-aos-delay='900'
-        >
-          <span className={styles.msgContent}>
-            <WhatsappLogo size={28} weight='fill' />
-            Mandar mensagem
-          </span>
-        </button>
-
-        <button onClick={abrirInsta} data-aos='fade-up' data-aos-delay='950'>
-          <InstagramLogo size={28} weight='fill' />
-        </button>
-        <button onClick={abrirGit} data-aos='fade-up' data-aos-delay='1000'>
-          <GithubLogo size={28} weight='fill' />
-        </button>
-        <button
-          onClick={abrirLinkedin}
-          data-aos='fade-up'
-          data-aos-delay='1050'
-        >
-          <LinkedinLogo size={28} weight='fill' />
-        </button>
+          data-aos-delay='2000'
+          onClick={() => {
+            const targetElement = document.getElementById('skills');
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+        />
       </div>
-      <CaretDown
-        size={42}
-        weight='bold'
-        className={styles.scrollDown}
-        data-aos='fade-up'
-        data-aos-delay='2000'
-        onClick={() => {
-          const targetElement = document.getElementById('skills');
-          if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-          }
-        }}
-      />
     </div>
   );
 }
