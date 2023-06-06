@@ -1,5 +1,6 @@
 .container {
   height: 100vh;
+  position: relative;
 }
 
 .navContainer {
@@ -155,13 +156,9 @@
 }
 
 .scrollDown {
-  width: 100%;
+  position: absolute;
+  left: 50%;
   animation: arrowAnimation 1.5s infinite;
-  display: flex;
-  justify-content: center;
-}
-
-.scrollDown svg {
   width: 32px;
   height: 32px;
 }

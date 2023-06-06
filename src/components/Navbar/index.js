@@ -108,19 +108,19 @@ export default function Navbar() {
           </button>
         </div>
       </main>
-      <div className={styles.scrollDown}>
-        <CaretDown
-          weight='bold'
-          data-aos='fade-up'
-          data-aos-delay='2000'
-          onClick={() => {
-            const targetElement = document.getElementById('skills');
-            if (targetElement) {
-              targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
-        />
-      </div>
+
+      <CaretDown
+        weight='bold'
+        data-aos='fade-up'
+        data-aos-delay='2000'
+        className={styles.scrollDown}
+        onClick={() => {
+          const targetElement = document.getElementById('skills');
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }}
+      />
     </div>
   );
 }
