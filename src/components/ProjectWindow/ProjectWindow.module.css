@@ -41,11 +41,7 @@
   background: #ff6780;
 }
 
-.logo,
-.niceBurguer,
-.commerce,
-.trinity,
-.redesocial {
+.content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -59,11 +55,7 @@
   cursor: pointer;
 }
 
-.logo img,
-.niceBurguer img,
-.commerce img,
-.trinity img,
-.redesocial img {
+.content img {
   width: 80%;
   height: 80%;
   background-color: #ff6780;
@@ -90,6 +82,6 @@
   background-color: #ff6780;
   text-align: center;
   font-size: 0.7vw;
-  width: 80%;
+  width: 80.1%;
   padding: 4px;
 }

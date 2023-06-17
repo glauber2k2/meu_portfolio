@@ -18,15 +18,38 @@ export default function ProjectWindow() {
     <div className={styles.container}>
       <Image src='/images/laptop.png' width={1080} height={1080} alt='' />
       <div className={styles.window}>
-        <div className={styles.logo}>
+        <div className={styles.content}>
           <Image src='/images/mylogo.png' width={1080} height={1080} alt='' />
           <h1>ROLE P/ BAIXO</h1>
         </div>
 
+        <Link href='https://nutri-landing-page-six.vercel.app/' legacyBehavior>
+          <a target='_blank'>
+            <div
+              className={`${styles.content} ${
+                hoveredItem === 'Nutri Site' ? styles.hovered : ''
+              }`}
+              onMouseEnter={() => handleMouseEnter('NiceBurguer')}
+              onMouseLeave={handleMouseLeave}
+            >
+              <Image
+                src='/images/project_image/nutri.jpg'
+                width={1080}
+                height={1080}
+                alt=''
+              />
+              <h1>Nutri Site</h1>
+              {hoveredItem === 'NiceBurguer' && (
+                <p>JavaScript, Next, React, Html, Css</p>
+              )}
+            </div>
+          </a>
+        </Link>
+
         <Link href='https://hamburgueria-nextjs.vercel.app/' legacyBehavior>
           <a target='_blank'>
             <div
-              className={`${styles.niceBurguer} ${
+              className={`${styles.content} ${
                 hoveredItem === 'NiceBurguer' ? styles.hovered : ''
               }`}
               onMouseEnter={() => handleMouseEnter('NiceBurguer')}
@@ -49,7 +72,7 @@ export default function ProjectWindow() {
         <Link href='https://e-commerce-six-smoky.vercel.app/' legacyBehavior>
           <a target='_blank'>
             <div
-              className={`${styles.commerce} ${
+              className={`${styles.content} ${
                 hoveredItem === 'E-commerce' ? styles.hovered : ''
               }`}
               onMouseEnter={() => handleMouseEnter('E-commerce')}
@@ -72,7 +95,7 @@ export default function ProjectWindow() {
         <Link href='https://trinity-sepia.vercel.app/' legacyBehavior>
           <a target='_blank'>
             <div
-              className={`${styles.trinity} ${
+              className={`${styles.content} ${
                 hoveredItem === 'Trinity' ? styles.hovered : ''
               }`}
               onMouseEnter={() => handleMouseEnter('Trinity')}
@@ -95,7 +118,7 @@ export default function ProjectWindow() {
         <Link href='https://redesocial-seven.vercel.app/' legacyBehavior>
           <a target='_blank'>
             <div
-              className={`${styles.redesocial} ${
+              className={`${styles.content} ${
                 hoveredItem === 'Rede Social' ? styles.hovered : ''
               }`}
               onMouseEnter={() => handleMouseEnter('Rede Social')}
