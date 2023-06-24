@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   gap: 2rem;
   padding: 2rem;
 }
@@ -31,7 +31,7 @@
 }
 
 .title h1 span {
-  background-color: #ff6780;
+  background-color: #9a36f7;
   color: #000;
 }
 
@@ -131,7 +131,7 @@
 
 .projectMsg h2 span {
   padding: 0 0.2rem;
-  background-color: #ff6780;
+  background-color: #9a36f7;
   color: #000;
 }
 
@@ -143,7 +143,7 @@
 
 .projectMsg h3 span {
   padding: 0 0.2rem;
-  border-bottom: 1px solid #ff6780;
+  border-bottom: 1px solid #9a36f7;
 }
 
 @media (max-width: 950px) {

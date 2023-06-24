@@ -38,7 +38,7 @@
   background: #000000;
 }
 .window::-webkit-scrollbar-thumb {
-  background: #ff6780;
+  background: #9a36f7;
 }
 
 .content {
@@ -58,12 +58,12 @@
 .content img {
   width: 80%;
   height: 80%;
-  background-color: #ff6780;
-  filter: drop-shadow(0px 0px 10px #ff6780);
+  background-color: #9a36f7;
+  filter: drop-shadow(0px 0px 10px #9a36f7);
   object-fit: cover;
 }
 
-.logo img {
+.content img:first-child {
   object-fit: scale-down;
 }
 
@@ -79,7 +79,7 @@
   transform: translate(-50%, -50%);
   font-weight: bold;
   color: #000;
-  background-color: #ff6780;
+  background-color: #9a36f7;
   text-align: center;
   font-size: 0.7vw;
   width: 80.1%;
